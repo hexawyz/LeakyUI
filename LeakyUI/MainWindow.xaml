@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="LeakyUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LeakyUI"
+    xmlns:controls="using:LeakyUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Name="Root">
+        <Grid.Resources>
+            <Style TargetType="controls:LineChart" BasedOn="{StaticResource DefaultLineChartStyle}">
+                <Setter Property="Margin" Value="3" />
+                <Setter Property="Stroke" Value="Blue" />
+                <Setter Property="StrokeThickness" Value="2" />
+                <Setter Property="AreaFill" Value="Teal" />
+            </Style>
+        </Grid.Resources>
+    </Grid>
+</Window>
